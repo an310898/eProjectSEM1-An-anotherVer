@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/favico.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./css/home.css"> -->
+    <link rel="stylesheet" href="./OwlCarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/news/news.css" />
+
+    <title>Astronomy News</title>
+  </head>
+  <body>
+    <!-- preloader -->
+    <div id="preloder">
+      <div class="loader"></div>
+  </div>
+    <!-- Hot news -->
+    <div class="bg-top">
+      <div class="container cont" >
+        <div class="row">
+        <div class="col-lg-6 col-md-6">
+          <div class="hs-text">
+              <div class="label"><h5>Quote</h5></div>
+              <h3> “Space is for everybody. It’s not just for a few people in science or math, or for a select group of astronauts. That’s our new frontier out there, and it’s everybody’s business to know about space.”</h3>
+              <div class="ht-meta">
+                  <img src="./images/news/photo-1535713875002-d1d0cf377fde.jpg" alt="">
+                  <ul>
+                      <li>by Christa McAuliffe.</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 offset-xl-2">
+          <div class="trending-post">
+            <div class="section-title">
+              <h5>Trending News</h5>
+            </div>
+            <div class="trending-slider owl-carousel owl-loaded owl-drag">
+              <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <div class="owl-item">
+                    <div class="single-trending-item1"></div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="single-trending-item2"></div>
+                  </div>
+                  
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- category -->
+    <div class="container cont">
+      <div class="category">
+        <ul
+          class="nav nav-pills justify-content-around"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="bigbang-theory-tab"
+              data-toggle="pill"
+              href="#bigbang-theory"
+              role="tab"
+              aria-controls="bigbang-theory"
+              aria-selected="false"
+              >BigBang Theory</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="earth-evo-tab"
+              data-toggle="pill"
+              href="#earth-evo"
+              role="tab"
+              aria-controls="evolution-of-earth"
+              aria-selected="false"
+              >Earth Evolution</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="black-holes-tab"
+              data-toggle="pill"
+              href="#black-holes"
+              role="tab"
+              aria-controls="black-holes"
+              aria-selected="false"
+              >Black Holes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="solar-system-tab"
+              data-toggle="pill"
+              href="#solar-system"
+              role="tab"
+              aria-controls="solar-system"
+              aria-selected="false"
+              >Solar System</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              class="space-flight-tab"
+              data-toggle="pill"
+              href="#space-flight"
+              role="tab"
+              aria-controls="space-flight"
+              aria-selected="false"
+              >Space Flight</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="galaxies-tab"
+              data-toggle="pill"
+              href="#galaxies"
+              role="tab"
+              aria-controls="galaxies"
+              aria-selected="false"
+              >Galaxies</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="exoplanets-tab"
+              data-toggle="pill"
+              href="#exoplanets"
+              role="tab"
+              aria-controls="exoplanets"
+              aria-selected="false"
+              >Exoplanets</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Content -->
+      <div class="content">
+        <div class="tab-content" id="pills-tabContent">
+          <!-- bigbang theory -->
+          <div
+            class="tab-pane fade show active"
+            id="bigbang-theory"
+            role="tabpanel"
+            aria-labelledby="bigbang-theory-tab"
+          >
+            <div id="bigbang"></div>
+            <div class="more"></div>
+            <button class="loadMoreBtn"></button>
+          </div>
+          <!-- bigbang theory -->
+          <div
+            class="tab-pane fade"
+            id="earth-evo"
+            role="tabpanel"
+            aria-labelledby="earth-evo-tab"
+          >
+            <div id="#earth"></div>
+          </div>
+          <!-- solar system  -->
+          <div
+            class="tab-pane fade"
+            id="solar-system"
+            role="tabpanel"
+            aria-labelledby="solar-system-tab"
+          >
+            <div id="solar"></div>
+            <div class="more"></div>
+            <button class="loadMoreBtn"></button>
+          </div>
+          <!-- black hole  -->
+          <div
+            class="tab-pane fade"
+            id="black-holes"
+            role="tabpanel"
+            aria-labelledby="black-holes-tab"
+          >
+            <div id="black"></div>
+            <div class="more"></div>
+            <button class="loadMoreBtn"></button>
+          </div>
+          <!-- space flight  -->
+          <div
+            class="tab-pane fade"
+            id="space-flight"
+            role="tabpanel"
+            aria-labelledby="space-flight-tab"
+          >
+            <div id="space"></div>
+            <div class="more"></div>
+            <button class="loadMoreBtn"></button>
+          </div>
+          <!-- space flight -->
+          <div
+            class="tab-pane fade"
+            id="galaxies"
+            role="tabpanel"
+            aria-labelledby="galaxies-tab"
+          >
+            <div id="gala"></div>
+            <div class="more"></div>
+            <button class="loadMoreBtn"></button>
+          </div>
+          <!-- exoplanets  -->
+          <div
+            class="tab-pane fade"
+            id="exoplanets"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <div id="exo"></div>
+            <div class="more"></div>
+            <button class="loadMoreBtn"></button>
+          </div>
+        </div>
+        <!-- letter box -->
+        <div class="news-letter">
+          <div class="box">
+            <h5>FREE EMAIL NEWSLETTER</h5>
+            <span
+              >Receive news, sky-event information, observing tips, and more
+              from Astronomy's weekly email newsletter. View our
+              <a href="privacyPolicy.html">Privacy Policy</a>.</span
+            >
+            <br />
+            <b>EMAIL ADRESS:</b>
+            <form>
+              <input type="email" placeholder="Email" />
+              <input
+                type="submit"
+                value="Submit"
+                placeholder="Email"
+                class="btn-submit"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/news/circle-progress.min.js"></script>
+    <script src="./js/news/fetch.js"></script>
+    <script src="./OwlCarousel/owl.carousel.min.js"></script>
+    <script src="./js/news/carouselNews.js"></script>
+    <script src="./js/news/corousel.js"></script>
+    <script src="./js/news/news.js"></script>
+
+  </body>
+</html>
