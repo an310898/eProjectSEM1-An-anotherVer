@@ -114,11 +114,9 @@ body {
     display: inline-block;
     padding: 5px 12px 4px 11px;
     background: rgba(194, 0, 0, 0.3);
-    -webkit-transform: skewX(
--15deg);
+    -webkit-transform: skewX(-15deg);
     -ms-transform: skewX(-15deg);
-    transform: skewX(
--15deg);
+    transform: skewX(-15deg);
 }
 .hs-text h3{
   color:white;
@@ -138,11 +136,9 @@ body {
     width: 11px;
     background: #c20000;
     content: "";
-    -webkit-transform: skewX(
--15deg);
+    -webkit-transform: skewX(-15deg);
     -ms-transform: skewX(-15deg);
-    transform: skewX(
--15deg);
+    transform: skewX(-15deg);
 }
 .hs-text .ht-meta ul {
   display: inline-block;
@@ -250,9 +246,14 @@ ul {
     text-overflow: ellipsis; 
   }
   .body h2.title{
+    color: white;
     margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
-  
+  .subcribe {
+    margin-top:15px;
+  }
   
 
 .category {
@@ -273,11 +274,9 @@ ul {
 .news-letter {
   display: flex;
   border:1px solid rgb(107, 107, 107);
-  height: 286px;
-  width: 230px;
+  height: inherit;
+  width: inherit;
   background: #000 url('https://astronomy.com/sitefiles/images/newsletter-box-bg.png')right bottom no-repeat;
-  border-radius: 25px;
-  margin-left:10px;
 }
 .box {
   padding: 10px;
@@ -290,12 +289,14 @@ form .btn-submit{
   margin-top: 7px;
 }
 .btn-submit {
-  background-color: #217fb5;
-  border: none;
-  color: white;
-  border-radius: 20px;
-  height: 27px;
-  width: 68px;
+  margin-left: 5px;
+    transform: skewX( 
+-15deg);
+    background-color: rgba(194, 0, 0, 0.3);
+    border: none;
+    color: white;
+    height: 27px;
+    width: 68px;
 }
 
 .privacy li,
@@ -323,7 +324,9 @@ input[type="email"]
 	right: 0;
 	top: -40px;
 }
-
+.fa-clock{
+  margin-right:5px;
+}
 .trending-slider.owl-carousel .owl-nav button {
 	font-size: 24px;
 	color: #eaeaea4d;
@@ -470,7 +473,113 @@ input[type="email"]
   }
 }
 
-  
+a:hover{
+  text-decoration: none;
+}
 .hero-slider .owl-stage-outer, .hero-slider .owl-stage, .hero-slider .owl-item, .hero-slider .hs-item {
   height: 100%;
+}
+.tab-elem {
+  margin-top:20px
+}
+.tab-elem .nav-tabs {
+  border: none;
+  position: absolute;
+  right: 30px;
+  top: 2px;
+}
+.tab-elem .nav .nav-item{
+  margin-right: 14px;
+}
+
+.tab-elem .nav-item .nav-link.active {
+  color: #c20000;
+  background-color: transparent;
+  border-color: transparent;
+}
+.tab-elem .nav-item .nav-link {
+  font-size: 14px;
+  color: #c4c4c4;
+  letter-spacing: 1px;
+  border: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0;
+}
+.latest-news{
+  margin-top:30px;
+}
+@media only screen and (max-width: 767px){
+    .tab-elem .nav-tabs {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-bottom: 20px;
+  }
+}
+.pagination-item button {
+  border:none;
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  background: #252525;
+  padding: 8px 18px 6px;
+  -webkit-transform: skewX(
+-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(
+-15deg);
+  margin-right: 8px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pagination-item button:hover {
+  color: #252525;
+  background-color: #c20000;
+}
+.social-media{
+  margin-top:15px;
+}
+.social-media ul li {
+  border: 1px solid #222222;
+  font-size: 14px;
+  color: #ffffff;
+  list-style: none;
+  height: 46px;
+  line-height: 46px;
+  -webkit-transform: skewX(-15deg);
+  -ms-transform: skewX(-15deg);
+  transform: skewX(-15deg);
+  padding: 0 18px 0 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-bottom: 15px;
+}
+.social-media ul li .sm-icon {
+  display: inline-block;
+  padding: 0 20px 0 18px;
+  background: #252525;
+  height: 45px;
+  margin-right: 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.social-media ul li span {
+  display: inline-block;
+  
+}
+.social-media ul li .follow {
+  display: inline-block;
+  
+  float: right;
+}
+
+.social-media ul li:hover {
+  border: 1px solid #c20000;
+}
+.social-media ul li:hover .sm-icon {
+  background-color: #c20000;
 }
