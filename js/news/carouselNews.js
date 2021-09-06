@@ -19,7 +19,7 @@ fetch('./js/news/json/carousel1.json')
         document.querySelector(".single-trending-item1").innerHTML = carouselData
 
     })
-    fetch('./js/news/json/carousel1.json')
+    fetch('./js/news/json/carousel2.json')
     .then(respond => respond.json())
     .then(data =>  {
         const carouselData = data

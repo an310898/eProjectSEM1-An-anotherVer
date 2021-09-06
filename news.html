@@ -92,6 +92,10 @@
                   aria-controls="black-holes" aria-selected="false">Black Holes</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" id="solar-system-tab" data-toggle="pill" href="#solar-system" role="tab"
+                  aria-controls="solar-system" aria-selected="false">Solar System</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" id="space-flight-tab" data-toggle="pill" href="#space-flight" role="tab"
                   aria-controls="space-flight" aria-selected="false">Space Flight</a>
               </li>
@@ -125,7 +129,11 @@
                 <!-- solar system  -->
                 <div class="tab-pane fade" id="solar-system" role="tabpanel" aria-labelledby="solar-system-tab">
                   <div id="solar"></div>
-
+                  <div class="pagination-item">
+                    <button onclick="solar1()"><span>1</span></button>
+                    <button onclick="solar2()"><span>2</span></button>
+                    <button onclick="solar3()"><span>3</span></button>
+                  </div>
                 </div>
                 <!-- black hole  -->
                 <div class="tab-pane fade" id="black-holes" role="tabpanel" aria-labelledby="black-holes-tab">
@@ -139,17 +147,29 @@
                 <!-- space flight  -->
                 <div class="tab-pane fade" id="space-flight" role="tabpanel" aria-labelledby="space-flight-tab">
                   <div id="space"></div>
-
+                  <div class="pagination-item">
+                    <button onclick="space1()"><span>1</span></button>
+                    <button onclick="space2()"><span>2</span></button>
+                    <button onclick="space3()"><span>3</span></button>
+                  </div>
                 </div>
                 <!-- galaxy -->
                 <div class="tab-pane fade" id="galaxies" role="tabpanel" aria-labelledby="galaxies-tab">
                   <div id="gala"></div>
-
+                  <div class="pagination-item">
+                    <button onclick="gala1()"><span>1</span></button>
+                    <button onclick="gala2()"><span>2</span></button>
+                    <button onclick="gala3()"><span>3</span></button>
+                  </div>
                 </div>
                 <!-- exoplanets  -->
                 <div class="tab-pane fade" id="exoplanets" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <div id="exo"></div>
-
+                  <div class="pagination-item">
+                    <button onclick="exo1()"><span>1</span></button>
+                    <button onclick="exo2()"><span>2</span></button>
+                    <button onclick="exo3()"><span>3</span></button>
+                  </div>
                 </div>
               </div>
             </div>

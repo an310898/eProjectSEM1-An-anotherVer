@@ -1,6 +1,11 @@
 body {
   background-color: black;
 }
+@media screen and (min-width: 1200px)
+{
+    .container{
+    max-width: 1200px;}
+}
 /* preLoad */
 #preloder {
 	position: fixed;
@@ -239,11 +244,13 @@ ul {
   .side-news .body {
     margin-left: 10px;
     color: white;
-    width: 58%;
+    width: 65%;
   }
-  .tab-pane p,
+  
   .body p{
-    text-overflow: ellipsis; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 78px; 
   }
   .body h2.title{
     color: white;
@@ -261,7 +268,7 @@ ul {
   padding-top:10px;
 }
 .tab-pane .thumb-nail {
-  width: 40%;
+  width: 30%;
 }
 .content {
   display: flex;
@@ -364,6 +371,10 @@ input[type="email"]
 .ti-pic img{
   width: 100px !important;
 }
+.trending-item .ti-text h6 {
+  height: 45px;
+  overflow: hidden;
+}
 .trending-item .ti-text h6 a {
 	font-size: 14px;
 	color: #ffffff;
@@ -373,6 +384,8 @@ input[type="email"]
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+  height: 60px;
+  overflow: hidden;
 }
 
 .trending-item .ti-text h6 a:hover {
@@ -572,7 +585,6 @@ a:hover{
 }
 .social-media ul li .follow {
   display: inline-block;
-  
   float: right;
 }
 
@@ -581,4 +593,14 @@ a:hover{
 }
 .social-media ul li:hover .sm-icon {
   background-color: #c20000;
+}
+.tab-pane a:hover .body .title {
+  color: #c20000;
+  transition: all 0.5s;
+}
+.fa-clock{
+  font-size: 11px;
+}
+.ti-text span {
+  font-size: 14px;
 }
