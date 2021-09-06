@@ -484,12 +484,10 @@ a:hover{
 }
 .tab-elem .nav-tabs {
   border: none;
-  position: absolute;
-  right: 30px;
-  top: 2px;
+  
 }
 .tab-elem .nav .nav-item{
-  margin-right: 14px;
+  margin-bottom: 20px;
 }
 
 .tab-elem .nav-item .nav-link.active {
@@ -507,7 +505,8 @@ a:hover{
   padding: 0;
 }
 .latest-news{
-  margin-top:30px;
+  padding-top:30px;
+  background-color: #0D0D0D;
 }
 @media only screen and (max-width: 767px){
     .tab-elem .nav-tabs {
