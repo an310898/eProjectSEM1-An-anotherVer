@@ -573,7 +573,7 @@ a:hover{
   display: inline-block;
   padding: 0 20px 0 18px;
   background: #252525;
-  height: 45px;
+  height: 2.72rem;
   margin-right: 10px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -589,14 +589,18 @@ a:hover{
 }
 
 .social-media ul li:hover {
-  border: 1px solid #c20000;
+  
+  border-image: linear-gradient(to right,#0a51a1, darkorchid, #f64f59) 1;
 }
 .social-media ul li:hover .sm-icon {
-  background-color: #c20000;
-}
+  background-color: #0a51a1;
+   /* border: 0 solid transparent;
+  background: 
+    linear-gradient(to right, darkblue, darkorchid) border-box; */
+} 
 .tab-pane a:hover .body .title {
   color: #c20000;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 .fa-clock{
   font-size: 11px;

@@ -1,6 +1,6 @@
 
 
-$(function(){
+$(function (){
     setTimeout(function(){
         $(".trending-slider").owlCarousel({
             loop: true,
@@ -12,7 +12,7 @@ $(function(){
             dotsEach: 2,
             smartSpeed: 1200,
             autoHeight: false,
-            autoplay: true
+            autoplay: true,
         });
         
     },1000)

@@ -169,24 +169,24 @@ const titleUrl = urlParams.get('id')
     .then(data =>{  
         var x = data.find(x => x.title.toString() === titleUrl )
         // console.log(x)
+        x.summary.replace("\u00A0","1")
         const news = `
                 <div>
                     <h2>${x.title}</h2>
                 </div>
                 <small class="text-muted">${x.time}</small>
                 
-                <div>
+                <div class="summary-content">
                     <span>${x.summary}</span>
                 </div>
                 <div class="article-img justify-content-center">
                     <img src="${x.img}">
                 </div>
                 <div class="text-justify">
-                <p >${x.summary}</p>
-                <br><p>${x.summary} ${x.summary}</p>
-                <br><p>${x.summary} </p>
+                <span>${x.content}</span>
                 </div>
             `
+            console.log(news)
         document.querySelector("#article-content").innerHTML = news
     })
     // Carousel

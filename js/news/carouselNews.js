@@ -1,4 +1,5 @@
-fetch('./js/news/json/carousel1.json')
+setTimeout(function (){
+    fetch('./js/news/json/carousel1.json')
     .then(respond => respond.json())
     .then(data =>  {
         const carouselData = data
@@ -16,10 +17,17 @@ fetch('./js/news/json/carousel1.json')
             `
         }).join("")
         // console.log(carouselData)
-        document.querySelector(".single-trending-item1").innerHTML = carouselData
+        document.querySelector(".item-1").innerHTML = carouselData
+        // document.querySelector(".item-3").innerHTML = carouselData
+        // document.querySelector(".item-5").innerHTML = carouselData
+        // document.querySelector(".item-6").innerHTML = carouselData
+
+
 
     })
-    fetch('./js/news/json/carousel2.json')
+},100)
+setTimeout(function(){
+    fetch('./js/news/json/carousel2.json')   
     .then(respond => respond.json())
     .then(data =>  {
         const carouselData = data
@@ -37,6 +45,13 @@ fetch('./js/news/json/carousel1.json')
             `
         }).join("")
         // console.log(carouselData)
-        document.querySelector(".single-trending-item2").innerHTML = carouselData
+        document.querySelector(".item-2").innerHTML = carouselData
+        // document.querySelector(".item-4").innerHTML = carouselData
+        // document.querySelector(".item-6").innerHTML = carouselData
+        // document.querySelector(".item-8").innerHTML = carouselData
+
+
 
     })
+},100)
+    

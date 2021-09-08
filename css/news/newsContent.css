@@ -71,9 +71,7 @@
     width: 150px;
     height: 140px;
 }
-#article-content{
-    border-bottom: 1px solid rgb(121, 121, 121);
-}
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -163,4 +161,13 @@ textarea{
         width: 90%;
         height: auto;
     }
+}
+.summary-content {
+    font-style: italic;
+}
+.text-indent {
+    text-indent: 10px;
+}
+body {
+    background-color: #0d0e0e;
 }
