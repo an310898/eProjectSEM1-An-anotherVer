@@ -171,3 +171,37 @@ textarea{
 body {
     background-color: #0d0e0e;
 }
+.answer-box {
+    margin-top:13px;
+    border-image: linear-gradient(to right,#0a51a1, darkorchid, #f64f59) 1;
+    position: relative;
+    border: 1px solid #fff;
+    padding: 17px 36px;
+    height: inherit;
+    transform: skewX(
+-15deg);
+}
+
+.short-answer span{
+    line-height: 22px;
+    width: 131px;
+    top: -14px;
+    position: absolute;
+    z-index: 9999;
+    background: #3669c9;
+
+}
+.content-title{
+    color:#6699f9;
+}
+.strong-content{
+    display: flex;
+    background: #3669c9;
+    justify-content:center
+}
+.content-theory {
+    margin-top: 20px;
+}
+.article-img-margin {
+    margin-bottom: -40px;
+}

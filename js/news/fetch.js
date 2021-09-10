@@ -1,6 +1,6 @@
 function timeOut(){
   setTimeout(function(){
-    window.scroll({top: 830, behavior: "smooth"})
+    window.scroll({top: 1000, behavior: "smooth"})
   },200)
 }
 
@@ -30,7 +30,7 @@ fetch('./js/news/json/solar-system.json')
                   <p>${article.summary}</p>
               </div>
               </a>
-              `
+              ` 
             }
           }
         }).join("")
