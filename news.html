@@ -19,9 +19,9 @@
 
 <body>
   <!-- preloader -->
-  <div id="preloder">
+  <!-- <div id="preloder">
     <div class="loader"></div>
-  </div>
+  </div> -->
   <!-- Hot news -->
   <div class="bg-top">
     <div class="container cont">
@@ -82,32 +82,51 @@
                 <div class="bigbang-img bg-img">
                   <div class="theory-title">
                     <h6>What is the Big Bang Theory?</h6>
+                    <span>by Elizabeth Howell.<br /> May 18, 2021</span>
+                    
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="tab-pane fade" id="theory-earth" role="tabpanel" aria-labelledby="list-profile-list">
+              <a href="newsContent.html?id=earth evolution">
+                <div class="earth-img bg-img">
+                  <div class="theory-title">
+                    <h6>Evolution of earth</h6>
                     <span>by Christa McAuliffe.</span>
                     
                   </div>
                 </div>
               </a>
-
             </div>
-            <div class="tab-pane fade" id="theory-earth" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-            <div class="tab-pane fade" id="theory-black" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+            <div class="tab-pane fade" id="theory-black" role="tabpanel" aria-labelledby="list-messages-list">
+              <a href="newsContent.html?id=what is black hole">
+                <div class="black-img bg-img">
+                  <div class="theory-title">
+                    <h6>What is black hole?</h6>
+                    <span>by Heather R. Smith|NASA.</span>
+                    
+                  </div>
+                </div>
+              </a>
+            </div>
             <div class="tab-pane fade" id="theory-solar" role="tabpanel" aria-labelledby="list-settings-list">...</div>
           </div>
         </div>
         <!-- tab selelect -->
 
         <div class="col-12 col-md-5 col-lg-4 theory-select">
-          <ul class="nav nav-pills flex-column" role="tablist">
+          <ul class="nav nav-pills flex-column " role="tablist">
             <li class="nav-item">
               <a class="nav-link active"  data-toggle="pill" href="#theory-bigbang">
                 <div class="theory-body d-flex">
                   <div class="theory-thumbnail">
-                    <img src="./images/bigbang-theory.jpg" alt="">
+                    <img src="./images/news/big-bang-33344.jpg" alt="">
                   </div>
                   <div class="theory-body-title justify-content-around">
                     <h6>What is Big Bang Theory?</h6>
                     <div>
-                      <span>by Christa McAuliffe.</span>
+                      <span>by Elizabeth Howell.</span>
                     </div>
                   </div>
                 </div>
@@ -117,10 +136,10 @@
               <a class="nav-link" data-toggle="pill" href="#theory-earth">
                 <div class="theory-body d-flex">
                 <div class="theory-thumbnail">
-                  <img src="./images/bigbang-theory.jpg" alt="">
+                  <img src="./images/news/earth-evo.jpg" alt="">
                 </div>
                 <div class="theory-body-title">
-                  <h6>What is Black Hole?</h6>
+                  <h6>Evolution of earth</h6>
                   <span>by Christa McAuliffe.</span>
 
                 </div>
@@ -128,13 +147,13 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="pill" href="#theory-black">
-                <div class="theory-body d-flex">
+                <div class="theory-body d-flex ">
                   <div class="theory-thumbnail">
-                    <img src="./images/bigbang-theory.jpg" alt="">
+                    <img src="./images/news/astronaut-entering-black-hole-4k-y2-1920x1080.jpg" alt="">
                   </div>
                   <div class="theory-body-title">
-                    <h6>Earth Evolution</h6>
-                    <span>by Christa McAuliffe.</span>
+                    <h6>What is black hole?</h6>
+                    <span>by Heather R. Smith|NASA </span>
 
                   </div>
                 </div>
@@ -155,6 +174,7 @@
                 </div>
               </a>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -181,12 +201,12 @@
                   aria-controls="evolution-of-earth" aria-selected="false">Earth Evolution</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="black-holes-tab" data-toggle="pill" href="#black-holes" role="tab"
-                  aria-controls="black-holes" aria-selected="false">Black Holes</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" id="solar-system-tab" data-toggle="pill" href="#solar-system" role="tab"
                   aria-controls="solar-system" aria-selected="false">Solar System</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="black-holes-tab" data-toggle="pill" href="#black-holes" role="tab"
+                  aria-controls="black-holes" aria-selected="false">Black Holes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="space-flight-tab" data-toggle="pill" href="#space-flight" role="tab"
@@ -210,12 +230,12 @@
                   aria-labelledby="bigbang-theory-tab">
                   <div id="bigbang"></div>
                   <div class="pagination-item">
-                    <button onclick="bigbang1()"><span>1</span></button>
-                    <button onclick="bigbang2()"><span>2</span></button>
-                    <button onclick="bigbang3()"><span>3</span></button>
+                    <button  class="selected"  onclick="bigbang1();selectBb(this);" ><span>1</span></button>
+                    <button onclick="bigbang2();selectBb(this);" ><span>2</span></button>
+                    <button onclick="bigbang3();selectBb(this);"><span>3</span></button>
                   </div>
                 </div>
-                <!-- bigbang theory -->
+                <!-- Earth -->
                 <div class="tab-pane fade" id="earth-evo" role="tabpanel" aria-labelledby="earth-evo-tab">
                   <div id="#earth"></div>
                 </div>
@@ -223,45 +243,45 @@
                 <div class="tab-pane fade" id="solar-system" role="tabpanel" aria-labelledby="solar-system-tab">
                   <div id="solar"></div>
                   <div class="pagination-item">
-                    <button onclick="solar1()"><span>1</span></button>
-                    <button onclick="solar2()"><span>2</span></button>
-                    <button onclick="solar3()"><span>3</span></button>
+                    <button class="selected" onclick="solar1();selectSl(this);"><span>1</span></button>
+                    <button onclick="solar2();selectSl(this);"><span>2</span></button>
+                    <button onclick="solar3();selectSl(this);"><span>3</span></button>
                   </div>
                 </div>
                 <!-- black hole  -->
                 <div class="tab-pane fade" id="black-holes" role="tabpanel" aria-labelledby="black-holes-tab">
                   <div id="black"></div>
                   <div class="pagination-item">
-                    <button onclick="black1()"><span>1</span></button>
-                    <button onclick="black2()"><span>2</span></button>
-                    <button onclick="black3()"><span>3</span></button>
+                    <button class="selected" onclick="black1();selectBh(this);"><span>1</span></button>
+                    <button onclick="black2();selectBh(this);"><span>2</span></button>
+                    <button onclick="black3();selectBh(this);"><span>3</span></button>
                   </div>
                 </div>
                 <!-- space flight  -->
                 <div class="tab-pane fade" id="space-flight" role="tabpanel" aria-labelledby="space-flight-tab">
                   <div id="space"></div>
                   <div class="pagination-item">
-                    <button onclick="space1()"><span>1</span></button>
-                    <button onclick="space2()"><span>2</span></button>
-                    <button onclick="space3()"><span>3</span></button>
+                    <button class="selected" onclick="space1();selectSf(this)"><span>1</span></button>
+                    <button onclick="space2();selectSf(this)"><span>2</span></button>
+                    <button onclick="space3();selectSf(this)"><span>3</span></button>
                   </div>
                 </div>
                 <!-- galaxy -->
                 <div class="tab-pane fade" id="galaxies" role="tabpanel" aria-labelledby="galaxies-tab">
                   <div id="gala"></div>
                   <div class="pagination-item">
-                    <button onclick="gala1()"><span>1</span></button>
-                    <button onclick="gala2()"><span>2</span></button>
-                    <button onclick="gala3()"><span>3</span></button>
+                    <button class="selected" onclick="gala1();selectGl(this);"><span>1</span></button>
+                    <button onclick="gala2();selectGl(this);"><span>2</span></button>
+                    <button onclick="gala3();selectGl(this);"><span>3</span></button>
                   </div>
                 </div>
                 <!-- exoplanets  -->
                 <div class="tab-pane fade" id="exoplanets" role="tabpanel" aria-labelledby="pills-profile-tab">
                   <div id="exo"></div>
                   <div class="pagination-item">
-                    <button onclick="exo1()"><span>1</span></button>
-                    <button onclick="exo2()"><span>2</span></button>
-                    <button onclick="exo3()"><span>3</span></button>
+                    <button class="selected" onclick="exo1();selectExo(this)"><span>1</span></button>
+                    <button onclick="exo2();selectExo(this)"><span>2</span></button>
+                    <button onclick="exo3();selectExo(this)"><span>3</span></button>
                   </div>
                 </div>
               </div>
@@ -285,7 +305,8 @@
                 <b>EMAIL ADRESS:</b>
                 <form>
                   <input type="email" placeholder="Email" />
-                  <input type="submit" value="Submit" placeholder="Email" class="btn-submit" />
+                  <!-- <input type="submit" value="Submit" placeholder="Email" class="btn-submit" /> -->
+                  <button class="btn-submit">Submit</button>
                 </form>
               </div>
             </div>

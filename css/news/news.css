@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+  /* font-family: 'Roboto', sans-serif; */
+}
 body {
   background-color: black;
 }
@@ -287,13 +292,11 @@ ul {
 .box span,b{
   color: white;
 }
-form .btn-submit{
-  margin-top: 7px;
-}
+
 .btn-submit {
   margin-left: 5px;
-    transform: skewX( 
--15deg);
+    /* transform: skewX( 
+-15deg); */
     background-color: rgba(194, 0, 0, 0.3);
     border: none;
     color: white;
@@ -531,7 +534,7 @@ a:hover{
   display: inline-block;
   font-size: 18px;
   color: #ffffff;
-  background: #252525;
+  background-color: #252525;
   padding: 8px 18px 6px;
   -webkit-transform: skewX(
 -15deg);
@@ -544,7 +547,7 @@ a:hover{
   transition: all 0.3s;
 }
 .pagination-item button:hover {
-  color: #252525;
+  color: white;
   background-color: #c20000;
 }
 .social-media{
@@ -570,7 +573,7 @@ a:hover{
   display: inline-block;
   padding: 0 20px 0 18px;
   background: #252525;
-  height: 2.72rem;
+  height: 2.76rem;
   margin-right: 10px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -617,20 +620,22 @@ a:hover{
 
 }
 .theory-title h6{
+  text-shadow: 2px 2px black;
   color: white;
   font-size: 25px;
   transition: all 0.3s;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .theory-title span {
-  color:white;
+  color:#d8d8d8;
 }
 .theory-body-title h6{
   color: white;
   margin-bottom: 10px;
 }
 .theory-body-title span{
-  color: grey;
+  color:#d8d8d8;
   font-style: italic;
 }
 .theory-body-title {
@@ -644,7 +649,7 @@ a:hover{
 }
 
 .bigbang-img {
-  background-image: url(../../images/bigbang-theory.jpg);
+  background-image: url(../../images/news/big-bang-33344.jpg);
 }
 .theory .bg-img{
   background-position: center center;
@@ -653,20 +658,40 @@ a:hover{
     position: relative;
     z-index: 1;
     width: 100%;
-    height: 421.31px;
+    height: 419px;
 
 }
 .theory-select .nav-item{
   background-color: #393c3d;
   border: none !important;
 }
+.theory-select ul {
+  display: block;
+    overflow-x: hidden;
+    position: relative;
+    height: 419px;
+    /* overflow-y: scroll; */
+}
+.theory-select ul::-webkit-scrollbar-track{
+ 
+  padding: 2px 0;
+  background-color: #393c3d;
+}
+.theory-select ul::-webkit-scrollbar {
+  width: 6px;
+}
+.theory-select ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #737272;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-color: #4d5051;
+  background-color: rgb(131, 133, 134);
   border-left-color:  #c20000;
 }
 
 .theory .nav-link {
-  padding: 16px 20px;
+  padding: 20px;
     border-left: 4px solid transparent;
     transition: all 0.3s;
 
@@ -686,4 +711,15 @@ a:hover{
   .theory-body-title span {
     font-size: 13px;
   }
+  
+}
+.earth-img {
+  background: url(../../images/news/earth-evo.jpg);
+}
+ button.selected {
+  background-color: #c20000;
+}
+.black-img {
+  background: url(../../images/news/astronaut-entering-black-hole-4k-y2-1920x1080.jpg);
+
 }

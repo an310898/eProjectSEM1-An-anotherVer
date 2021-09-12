@@ -5,8 +5,13 @@ function timeOut(){
 }
 
 // solarSystem
-
-fetch('./js/news/json/solar-system.json')
+var bigBang = new Request ('https://fake-api-sem.herokuapp.com/bigbang')
+var blackHole = new Request ('https://fake-api-sem.herokuapp.com/blackhole')
+var exoplanet = new Request('https://fake-api-sem.herokuapp.com/exoplanet')
+var galaxies = new Request ('https://fake-api-sem.herokuapp.com/galaxies') 
+var solarSystem = new Request ('https://fake-api-sem.herokuapp.com/solarsystem')
+var spaceFlight = new Request ('https://fake-api-sem.herokuapp.com/spaceflight')
+fetch(solarSystem)
     .then(respond => respond.json())
   
     .then(data =>{
@@ -40,7 +45,7 @@ fetch('./js/news/json/solar-system.json')
 function solar1(){
   timeOut()
 
-  fetch('./js/news/json/solar-system.json')
+  fetch(solarSystem)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -73,7 +78,7 @@ function solar1(){
 function solar2(){
   timeOut()
 
-  fetch('./js/news/json/solar-system.json')
+  fetch(solarSystem)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -104,7 +109,7 @@ function solar2(){
 }
 function solar3(){
   timeOut()
-  fetch('./js/news/json/solar-system.json')
+  fetch(solarSystem)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -134,7 +139,7 @@ function solar3(){
   })
 }
 // spaceFlight
-    fetch('./js/news/json/space-flight.json')
+    fetch(spaceFlight)
     .then(response => response.json())
     .then(data => {
       
@@ -169,7 +174,7 @@ function solar3(){
 function space1(){
   timeOut()
 
-  fetch('./js/news/json/space-flight.json')
+  fetch(spaceFlight)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -202,7 +207,7 @@ function space1(){
 function space2(){
   timeOut()
 
-  fetch('./js/news/json/space-flight.json')
+  fetch(spaceFlight)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -233,7 +238,7 @@ function space2(){
 }
 function space3(){
   timeOut()
-  fetch('./js/news/json/space-flight.json')
+  fetch(spaceFlight)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -263,7 +268,7 @@ function space3(){
   })
 }
 // galaxy
-fetch('./js/news/json/galaxies.json')
+fetch(galaxies)
 .then(response => response.json())
 .then(data => {
  
@@ -297,7 +302,7 @@ fetch('./js/news/json/galaxies.json')
 function gala1(){
   timeOut()
 
-  fetch('./js/news/json/galaxies.json')
+  fetch(galaxies)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -331,7 +336,7 @@ function gala2(){
   timeOut()
 
 
-  fetch('./js/news/json/galaxies.json')
+  fetch(galaxies)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -363,7 +368,7 @@ function gala2(){
 function gala3(){
   timeOut()
 
-  fetch('./js/news/json/galaxies.json')
+  fetch(galaxies)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -393,7 +398,7 @@ function gala3(){
   })
 }
 // bigBang
-fetch('./js/news/json/bigbang.json')
+fetch(bigBang)
 .then(response => response.json())
 .then(data => {
  
@@ -427,7 +432,7 @@ fetch('./js/news/json/bigbang.json')
 function bigbang1(){
   timeOut()
 
-  fetch('./js/news/json/bigbang.json')
+  fetch(bigBang)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -460,7 +465,7 @@ function bigbang1(){
 function bigbang2(){
   timeOut()
 
-  fetch('./js/news/json/bigbang.json')
+  fetch(bigBang)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -491,7 +496,7 @@ function bigbang2(){
 }
 function bigbang3(){
   timeOut()
-  fetch('./js/news/json/bigbang.json')
+  fetch(bigBang)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -521,7 +526,7 @@ function bigbang3(){
   })
 }
 // blackHole
-fetch('./js/news/json/black-hole.json')
+fetch(blackHole)
 .then(response => response.json())
 .then(data => {
   for (var i=0;i<data.length;i++){
@@ -554,7 +559,7 @@ fetch('./js/news/json/black-hole.json')
 function black1(){
   timeOut()
 
-  fetch('./js/news/json/black-hole.json')
+  fetch(blackHole)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -588,7 +593,7 @@ function black2(){
   timeOut()
 
 
-  fetch('./js/news/json/black-hole.json')
+  fetch(blackHole)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -620,7 +625,7 @@ function black2(){
 function black3(){
   timeOut()
 
-  fetch('./js/news/json/black-hole.json')
+  fetch(blackHole)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -650,7 +655,7 @@ function black3(){
   })
 }
 // exoplanet
-fetch('./js/news/json/exoplanet.json')
+fetch(exoplanet)
 .then(response => response.json())
 .then(data => {
  
@@ -686,7 +691,7 @@ fetch('./js/news/json/exoplanet.json')
 function exo1(){
   timeOut()
 
-  fetch('./js/news/json/exoplanet.json')
+  fetch(exoplanet)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -720,7 +725,7 @@ function exo2(){
   timeOut()
 
 
-  fetch('./js/news/json/exoplanet.json')
+  fetch(exoplanet)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
@@ -752,7 +757,7 @@ function exo2(){
 function exo3(){
   timeOut()
 
-  fetch('./js/news/json/exoplanet.json')
+  fetch(exoplanet)
   .then(respond => respond.json())
   .then(data => {
     for (var i=0;i<data.length;i++){
