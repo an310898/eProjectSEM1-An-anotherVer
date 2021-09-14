@@ -100,6 +100,11 @@ function categorySelect(){
     document.querySelector("#galaxies").classList.add('active','show')
 
   }
+  if(titleUrl === "earth-evo"){
+    document.querySelector("#earth-evo-tab").classList.add('active')
+    document.querySelector("#earth-evo").classList.add('active','show')
+
+  }
 }
 // function categorySelect(){
 //     if(titleUrl === "exoplanet"){

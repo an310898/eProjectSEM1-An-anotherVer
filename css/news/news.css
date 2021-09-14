@@ -704,7 +704,7 @@ a:hover{
   
 }
 .theory-title span {
-  color: grey;
+  color: #ababab;
     font-style: italic;
 }
 @media screen and (max-width :1199px){
@@ -723,3 +723,9 @@ a:hover{
   background: url(../../images/news/astronaut-entering-black-hole-4k-y2-1920x1080.jpg);
 
 }
+.text-muted {
+  color: #c7c7c7 !important;
+}
+.solar-system-img{
+  background-image: url(../../images/news/earths-solar-system.jpg);
+  }
