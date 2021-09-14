@@ -8,6 +8,7 @@ if (titleUrl === "theory bigbang") {
         <div class="content-title">
             <h2>What is BigBang Theory?</h2>
         </div>
+        <small class="text-muted">by Elizabeth Howell. May 18, 2021</small>
         <div class="answer-box">
             <div class="short-answer">
              <span>The Short Answer:</span>
@@ -233,7 +234,112 @@ if (titleUrl === "earth evolution") {
 }
 if(titleUrl === "what is black hole") {
   const news = `
+  <div class="content-title">
+  <h2>What Is a Black Hole?</h2>
+</div>
+<small class="text-muted">by Heather R. Smith|NASA. Aug 21, 2018</small>
+<div class="answer-box">
+  <div class="short-answer">
+   <span>The Short Answer:</span>
+  </div>
+  <span>A black hole is an area of such immense gravity that nothing -- not even light -- can escape from it.</span>
+</div>
+<p>
+  A black hole is a place in space where gravity pulls so much that even light can not get out. The gravity
+  is so strong because matter has been squeezed into a tiny space. This can happen when a star is dying.
+  <br /><br />Because no light can get out, people can't see black holes. They are invisible. Space
+  telescopes with special tools can help find black holes. The special tools can see how stars that are very
+  close to black holes act differently than other stars.
+</p>
+<div class="img-with-content">
+  <div>
+    <img src="http://cdn.sci-news.com/images/2021/02/image_9373-Cygnus-X-1.jpg" alt="">
+  </div>
+  <div class="">
+    An artist's drawing a black hole named Cygnus X-1. It formed when a large star caved in. This black hole
+    pulls matter from blue star beside it.<br />
+    <b>Credits: NASA/CXC/M.Weiss</b>
+  </div>
+</div>
+<p>
+  <b>How Big Are Black Holes?</b>
+  <br />Black holes can be big or small. Scientists think the smallest black holes are as small as just one
+  atom. These black holes are very tiny but have the mass of a large mountain. Mass is the amount of matter,
+  or "stuff," in an object.
 
+  <br /><br />Another kind of black hole is called "stellar." Its mass can be up to 20 times more than the
+  mass of the sun. There may be many, many stellar mass black holes in Earth's galaxy. Earth's galaxy is
+  called the Milky Way.
+
+  <br /><br />The largest black holes are called "supermassive." These black holes have masses that are more
+  than 1 million suns together. Scientists have found proof that every large galaxy contains a supermassive
+  black hole at its center. The supermassive black hole at the center of the Milky Way galaxy is called
+  Sagittarius A. It has a mass equal to about 4 million suns and would fit inside a very large ball that
+  could hold a few million Earths.
+</p>
+<div class="img-with-content">
+  <div>
+    <img
+      src="https://static.scientificamerican.com/sciam/cache/file/59CB8485-EDD7-47E5-83F8314FD73BE3B9_source.jpg"
+      alt="">
+  </div>
+  <div class="">
+    An artist's drawing shows the current view of the Milky Way galaxy. Scientific evidence shows that in
+    the middle of the Milky Way is a supermassive black hole.<br />
+    <b>Credits: ESO/M. Kornmesser</b>
+  </div>
+</div>
+<p>
+  <b>How Do Black Holes Form?</b>
+  <br /> Scientists think the smallest black holes formed when the universe began.
+  <br /><br />
+  Stellar black holes are made when the center of a very big star falls in upon itself, or collapses. When
+  this happens, it causes a supernova. A supernova is an exploding star that blasts part of the star into
+  space.
+  <br /><br />
+  Scientists think supermassive black holes were made at the same time as the galaxy they are
+  in.<br /><br />
+  <b>If Black Holes Are "Black," How Do Scientists Know They Are There?</b>
+  <br />A black hole can not be seen because strong gravity pulls all of the light into the middle of the
+  black
+  hole. But scientists can see how the strong gravity affects the stars and gas around the black hole.
+  Scientists can study stars to find out if they are flying around, or orbiting, a black hole.
+  <br /><br />
+  When a black hole and a star are close together, high-energy light is made. This kind of light can not be
+  seen with human eyes. Scientists use satellites and telescopes in space to see the high-energy light.
+</p>
+<div class="img-with-content">
+  <div>
+    <img
+      src="https://www.nasa.gov/sites/default/files/styles/side_image/public/thumbnails/image/edu_chandra_informal.jpg?itok=gcmouSQ_"
+      alt="">
+  </div>
+  <div>
+    This image of the center of the Milky Way galaxy was taken by the Chandra X-ray Observatory.
+    <br />
+    <b>Credits: NASA/CXC/MIT/F.K. Baganoff et al.</b>
+  </div>
+</div>
+<p>
+  <b>Could a Black Hole Destroy Earth?</b><br />
+  Black holes do not go around in space eating stars, moons and planets. Earth will not fall into a black hole because no black hole is close enough to the solar system for Earth to do that.
+
+  <br /><br />Even if a black hole the same mass as the sun were to take the place of the sun, Earth still would not fall in. The black hole would have the same gravity as the sun. Earth and the other planets would orbit the black hole as they orbit the sun now.
+
+  <br /><br />The sun will never turn into a black hole. The sun is not a big enough star to make a black hole.
+</p>
+<div class="img-with-content">
+  <div>
+    <img
+      src="https://www.nasa.gov/sites/default/files/styles/side_image/public/sgr_lg_2.jpg?itok=05qVGzHz"
+      alt="">
+  </div>
+  <div>
+    Sagittarius A* is the black hole at the center of the Milky Way galaxy.
+    <br />
+    <b>Credits: X-ray: NASA/UMass/D.Wang et al., IR: NASA/STScI</b>
+  </div>
+</div>
   `
   document.querySelector("#article-content").innerHTML = news
 }
@@ -281,9 +387,7 @@ fetch("./js/news/json/space-flight.json")
                     <img src="${x.img}">
                 </div>
                 <div class="text-justify">
-                <p >${x.summary}</p>
-                <br><p>${x.summary} ${x.summary}</p>
-                <br><p>${x.summary} </p>
+                <p >${x.content}</p>
                 </div>
             `;
     document.querySelector("#article-content").innerHTML = news;
@@ -308,9 +412,8 @@ fetch("./js/news/json/solar-system.json")
                     <img src="${x.img}">
                 </div>
                 <div class="text-justify">
-                <p >${x.summary}</p>
-                <br><p>${x.summary} ${x.summary}</p>
-                <br><p>${x.summary} </p>
+                <p >${x.content}</p>
+                
                 </div>
             `;
     document.querySelector("#article-content").innerHTML = news;
@@ -334,9 +437,8 @@ fetch("./js/news/json/galaxies.json")
                     <img src="${x.img}">
                 </div>
                 <div class="text-justify">
-                <p >${x.summary}</p>
-                <br><p>${x.summary} ${x.summary}</p>
-                <br><p>${x.summary} </p>
+                <p >${x.content}</p>
+                
                 </div>
             `;
     document.querySelector("#article-content").innerHTML = news;
@@ -360,9 +462,8 @@ fetch("./js/news/json/bigbang.json")
                     <img src="${x.img}">
                 </div>
                 <div class="text-justify">
-                <p >${x.summary}</p>
-                <br><p>${x.summary} ${x.summary}</p>
-                <br><p>${x.summary} </p>
+                <p >${x.content}</p>
+                
                 </div>
             `;
     document.querySelector("#article-content").innerHTML = news;
@@ -386,9 +487,8 @@ fetch("./js/news/json/black-hole.json")
                     <img src="${x.img}">
                 </div>
                 <div class="text-justify">
-                <p >${x.summary}</p>
-                <br><p>${x.summary} ${x.summary}</p>
-                <br><p>${x.summary} </p>
+                <p >${x.content}</p>
+                
                 </div>
             `;
     document.querySelector("#article-content").innerHTML = news;
@@ -416,7 +516,7 @@ fetch("./js/news/json/exoplanet.json")
                 <span>${x.content}</span>
                 </div>
             `;
-    console.log(news);
+    // console.log(news);
     document.querySelector("#article-content").innerHTML = news;
   });
 // Carousel
@@ -436,9 +536,8 @@ fetch("./js/news/json/carousel.json")
                         <img src="${x.img}">
                     </div>
                     <div class="text-justify">
-                    <p >${x.summary}</p>
-                    <br><p>${x.summary} ${x.summary}</p>
-                    <br><p>${x.summary} </p>
+                    <p >${x.content}</p>
+                    
                     </div>
                 `;
     document.querySelector("#article-content").innerHTML = news;

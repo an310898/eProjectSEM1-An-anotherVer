@@ -18,9 +18,6 @@ setTimeout(function (){
         }).join("")
         // console.log(carouselData)
         document.querySelector(".item-1").innerHTML = carouselData
-        // document.querySelector(".item-3").innerHTML = carouselData
-        // document.querySelector(".item-5").innerHTML = carouselData
-        // document.querySelector(".item-6").innerHTML = carouselData
 
 
 
@@ -46,9 +43,6 @@ setTimeout(function(){
         }).join("")
         // console.log(carouselData)
         document.querySelector(".item-2").innerHTML = carouselData
-        // document.querySelector(".item-4").innerHTML = carouselData
-        // document.querySelector(".item-6").innerHTML = carouselData
-        // document.querySelector(".item-8").innerHTML = carouselData
 
 
 
