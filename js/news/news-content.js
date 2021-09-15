@@ -232,7 +232,7 @@ if (titleUrl === "earth-evolution") {
   document.querySelector("#article-content").innerHTML = news
   // document.querySelector(".recommended").innerHTML = recommend
 }
-if(titleUrl === "what-is-black hole") {
+if(titleUrl === "what-is-black-hole") {
   const news = `
   <div class="content-title">
   <h2>What Is a Black Hole?</h2>
@@ -441,6 +441,9 @@ fetch(main)
                 </div>
             `;
     document.querySelector("#article-content").innerHTML = news;
+    const recommend = `
+
+    `
   });
 // SpaceFlight
 fetch("./js/news/json/space-flight.json")
@@ -615,4 +618,12 @@ fetch("./js/news/json/carousel.json")
                     </div>
                 `;
     document.querySelector("#article-content").innerHTML = news;
+  });
+
+  document.querySelector('.comment-input').addEventListener('submit', (e) => {
+    const formData = new FormData(e.target);
+    console.log(formData)
+
+    // Now you can use formData.get('foo'), for example.
+    // Don't forget e.preventDefault() if you want to stop normal form .submission
   });

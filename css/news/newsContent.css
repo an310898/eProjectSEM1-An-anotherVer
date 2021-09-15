@@ -48,7 +48,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 15px;
-        width: 100%;
+        width: 90%;
         align-items: flex-end;
     }
 }
@@ -77,10 +77,14 @@
     display: flex;
     flex-direction: row;
 }
-
+div.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .avatar img{
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     border-radius: 90%;
     display: block;
 
@@ -90,21 +94,28 @@
     margin-top: 5px;
     color:white;
     margin-bottom: 0 !important;
-    margin-top: 10px;
-    cursor: pointer;
+    margin-top: 5px;
 }
 .comment-area{
     padding-bottom: 5px;
     display: flex;
     flex-direction: column;
     margin-left: 15px;
-    width: 45%;
+    width: 90%;
     align-items: flex-end;
 }
-textarea{
+.comment .row {
+    margin: 0;
+}
+.comment {
+    border-top: 0.1rem solid #797979;
+    padding: 10px;
+    margin-top: 20px;
+}
+.comment-input {
     margin-left: 15px;
     width: 100%;
-    height: 32px;
+    height: 34px;
     resize: none;
     overflow: hidden;
     word-break: break-word;
@@ -141,21 +152,34 @@ textarea{
         display: none;
     }
     .comment-area{
-        padding-bottom: 5px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-        width: 100%;
-        align-items: flex-end;
+        
+        width: 90%;
     }
     
   }
+  @media screen and (max-width:514px){
+      .comment-area{
+        width: 85% !important;
+      }
+  }
+  @media screen and (max-width:421px){
+    .comment-area{
+      width: 79% !important;
+    }
+}
+@media screen and (max-width:320px){
+    .comment-area{
+        width: 70% !important;
+    }
+}
 @media screen and (max-width:768px) {
     .article-img img{
         width: 70%;
         height: auto;
     }
-    
+    .comment-area{
+        width: 88%;
+    }
 }
 @media screen and (max-width:576px) {
     .article-img img{
@@ -344,4 +368,8 @@ background-color: #404040;
 }
 small{
     color:#c7c7c7;
+}
+.main-content col-lg-8 {
+    display: flex;
+    flex-direction: column;
 }
