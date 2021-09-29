@@ -1,6 +1,6 @@
 function timeOut(){
   setTimeout(function(){
-    window.scroll({top: 1000, behavior: "smooth"})
+    window.scroll({top: 1300, behavior: "smooth"})
   },200)
 }
 
