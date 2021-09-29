@@ -323,7 +323,7 @@ ul {
     color: white;
 }
 .trending-post {
-	background: #000000;
+	background: rgb(0 0 0 / 70%);
 	padding: 40px 28px;
 }
 /* .single-trending-item1,
@@ -759,4 +759,11 @@ a:hover{
   .body p{
     max-height: 46px;
   }
+  }
+
+  .latest-news .nav-link:hover {
+    color: #c4c4c4 !important;
+  }
+  .comment-display .row:last-child {
+    margin-bottom: 20px;
   }
