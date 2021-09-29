@@ -10,7 +10,6 @@
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <!-- <link rel="stylesheet" href="./css/home.css"> -->
   <link rel="stylesheet" href="./css/news/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/news/news.css" />
@@ -291,10 +290,10 @@
                 <a class="nav-link active" id="bigbang-theory-tab" data-toggle="pill" href="#bigbang-theory" role="tab"
                   aria-controls="bigbang-theory" aria-selected="false">BigBang Theory</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" id="earth-evo-tab" data-toggle="pill" href="#earth-evo" role="tab"
                   aria-controls="evolution-of-earth" aria-selected="false">Earth Evolution</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" id="solar-system-tab" data-toggle="pill" href="#solar-system" role="tab"
                   aria-controls="solar-system" aria-selected="false">Solar System</a>
@@ -399,9 +398,9 @@
                 <br />
                 <b>EMAIL ADRESS:</b>
                 <form>
-                  <input type="email" placeholder="Email" />
+                  <input type="text" id="input-email" placeholder="Email" />
                   <!-- <input type="submit" value="Submit" placeholder="Email" class="btn-submit" /> -->
-                  <button class="btn-submit">Submit</button>
+                  <button class="btn-submit"  onclick="alert('Thanks for Subcribe')" type="button">Submit</button>
                 </form>
               </div>
             </div>
@@ -412,30 +411,41 @@
             </div>
             <ul>
               <li>
-                <div class="box-gr with-border">
-                  <div class="sm-icon"><i class="fab fa-facebook"></i></div>
-                  <span>Facebook</span>
-                  <div class="follow">1,2k Follow</div>
-                </div>
+                <a href="https://www.facebook.com/NASA" target="_blank">
+                  
+                    <div class="sm-icon"><i class="fab fa-facebook"></i></div>
+                    <span>Facebook</span>
+                    <div class="follow">25M Follow</div>
+                  
+                </a>
               </li>
               <li>
-                <div class="sm-icon"><i class="fab fa-twitter"></i></div>
-                <span>Twitter</span>
-                <div class="follow">1,2k Follow</div>
+                <a href="https://twitter.com/NASA" target="_blank">
+                  <div class="sm-icon"><i class="fab fa-twitter"></i></div>
+                  <span>Twitter</span>
+                  <div class="follow">48.6M Follow</div>
+                </a>
+  
               </li>
               <li>
-                <div class="sm-icon"><i class="fab fa-youtube"></i></div>
-                <span>Youtube</span>
-                <div class="follow">2,3k Subscribe</div>
+                <a href="https://www.youtube.com/c/NASA" target="_blank">
+                  <div class="sm-icon"><i class="fab fa-youtube"></i></div>
+                  <span>Youtube</span>
+                  <div class="follow">9.3M Subscribe</div>
+                </a>
+  
               </li>
               <li>
-                <div class="sm-icon"><i class="fab fa-instagram"></i></div>
-                <span>Instagram</span>
-                <div class="follow">2,6k Follow</div>
+                <a href="https://www.instagram.com/nasa/" target="_blank">
+                  <div class="sm-icon"><i class="fab fa-instagram"></i></div>
+                  <span>Instagram</span>
+                  <div class="follow">70M Follow</div>
+                </a>
+  
               </li>
             </ul>
           </div>
-          <div class="picture">
+          <div class="weather">
             <div class="section-title">
               <h5>Weather</h5>
             </div>
@@ -512,7 +522,7 @@
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/news/circle-progress.min.js"></script>
   <script src="./js/news/owl.carousel.min.js"></script>
-  <script src="./js/news/corousel.js"></script>
+  <script src="./js/news/carousel.js"></script>
   <script src="./js/news/fetch.js"></script>
   <script src="./js/news/news.js"></script>
 

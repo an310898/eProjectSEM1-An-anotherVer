@@ -1,6 +1,6 @@
 $(window).on('load', function () {
     $(".loader").fadeOut();
-    $("#preloder").delay(1000).fadeOut("slow");
+    $("#preloder").delay(800).fadeOut("slow");
 });
 
 function selectBb(elem) {
@@ -58,11 +58,18 @@ const urlParams = new URLSearchParams(queryString);
 // console.log(queryString)
 const titleUrl = urlParams.get("id");
 // console.log(titleUrl);
-if(titleUrl){
+if(titleUrl==='discover-the-universe'){
+  setTimeout(function(){
+    window.scroll({top: 780, behavior: "smooth"})
+  },1000)
+} else if(titleUrl){
     // console.log("nhan url")
-    setTimeout(function(){
-        window.scroll({top: 1350, behavior: "smooth"})
+    
+      setTimeout(function(){
+        window.scroll({top: 1300, behavior: "smooth"})
       },1000)
+    
+    
     
     categorySelect();
 } else {
@@ -75,6 +82,10 @@ function categorySelect(){
   for (var i=0;i< a.length;i++){
     a[i].classList.remove('active')
     b[i].classList.remove('active','show')
+  }
+  if (titleUrl === "bigbang-theory"){
+    document.querySelector("#bigbang-theory-tab").classList.add('active')
+    document.querySelector("#bigbang-theory").classList.add('active','show')
   }
   if (titleUrl === "exoplanet"){
     document.querySelector("#exoplanets-tab").classList.add('active')

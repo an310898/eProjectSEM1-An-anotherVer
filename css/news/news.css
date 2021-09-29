@@ -105,6 +105,9 @@ body {
   padding-bottom: 2px;
 }
   /* HotNews */
+  .section-title {
+    margin-bottom: 10px;
+  }
   .section-title h5 {
     color: #ffffff;
     font-size: 20px;
@@ -255,13 +258,16 @@ ul {
   .body p{
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 78px; 
+    max-height: 70px;
   }
   .body h2.title{
     color: white;
     margin-bottom: 3px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    max-height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   
@@ -308,7 +314,7 @@ ul {
 .privacy p {
   color: white;
 }
-input[type="email"]
+#input-email
 {
     background: transparent;
     border: none;
@@ -493,7 +499,7 @@ a:hover{
   height: 100%;
 }
 .tab-elem {
-  margin-top:20px
+  margin-top:10px
 }
 .tab-elem .nav-tabs {
   border: none;
@@ -516,10 +522,12 @@ a:hover{
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 0;
+  margin-right:10px;
 }
 .latest-news{
-  padding-top:30px;
-  background-color: #0D0D0D;
+  padding:30px 0;
+  background: linear-gradient(
+    180deg, rgb(0 0 0) 0%, rgb(0 0 0) 80%, rgba(26,36,48,1) 100%);
 }
 @media only screen and (max-width: 767px){
     .tab-elem .nav-tabs {
@@ -528,13 +536,16 @@ a:hover{
         top: 0;
         margin-bottom: 20px;
   }
+  .tab-pane .thumb-nail {
+    width: 40%;
+  }
 }
 .pagination-item button {
   border:none;
   display: inline-block;
   font-size: 18px;
   color: #ffffff;
-  background-color: #252525;
+  background-color: #191919;
   padding: 8px 18px 6px;
   -webkit-transform: skewX(
 -15deg);
@@ -598,6 +609,9 @@ a:hover{
   background: 
     linear-gradient(to right, darkblue, darkorchid) border-box; */
 } 
+.social-media a{
+  color:white;
+}
 .tab-pane a:hover .body .title {
   color: #c20000;
   transition: all 0.4s;
@@ -606,11 +620,11 @@ a:hover{
   font-size: 11px;
 }
 .ti-text span {
-  font-size: 14px;
+  font-size: 80%;
 }
 .theory{
   padding:30px 0;
-  background-color: #0D0D0D;
+  background-color: #000000;
 }
 .theory-title  {
   
@@ -712,6 +726,7 @@ a:hover{
     font-size: 13px;
   }
   
+  
 }
 .earth-img {
   background: url(../../images/news/earth-evo.jpg);
@@ -728,4 +743,20 @@ a:hover{
 }
 .solar-system-img{
   background-image: url(../../images/news/the-solar-system.jpg);
+  }
+
+  /* .latest-news .container {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 50px;
+  } */
+  @media screen and (max-width:425px){
+    .tab-pane .thumb-nail {
+      width: 55%;
+  }
+  .body h2.title {
+    max-height: 50px;
+  }
+  .body p{
+    max-height: 46px;
+  }
   }
