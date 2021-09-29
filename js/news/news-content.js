@@ -854,7 +854,7 @@ fetch(exoplanet)
     document.querySelector(".related-carousel .owl-carousel").innerHTML = carouselRelated
   });
 // Carousel
-fetch("./js/news/json/carousel.json")
+fetch("https://fake-api-sem.herokuapp.com/carousel")
   .then((respond) => respond.json())
   .then((data) => {
     var x = data.find((x) => x.title.toString() === titleUrl);
